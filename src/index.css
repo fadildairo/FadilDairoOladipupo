@@ -1,0 +1,4 @@
+.index-container {
+  --bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--bg-opacity));
+}

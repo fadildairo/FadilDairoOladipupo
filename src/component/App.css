@@ -1,0 +1,49 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.5rem /* 56px */;
+  font-family: cursive;
+  text-align: center;
+  --text-opacity: 1;
+  color: rgb(255 255 255 / var(--text-opacity));
+}
+
+p {
+  font-size: 3rem /* 48px */;
+  font-family: sans-serif;
+  text-align: center;
+  --text-opacity: 1;
+  color: rgb(229 231 235 / var(--text-opacity));
+  line-height: 0;
+}
+.suggested-prayers {
+  margin-top: -30px;
+}
+
+.suggested-prayers p {
+  font-size: 1rem;
+  font-family: cursive;
+  text-align: center;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 600px) {
+  .text p {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  .suggested-prayers p {
+    margin-top: 20px;
+    line-height: 0.5px;
+    font-size: 0.7rem;
+    font-family: cursive;
+    text-align: center;
+  }
+}
