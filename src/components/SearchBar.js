@@ -2,7 +2,7 @@ import "./SearchBar.css";
 import { useState } from "react";
 import getPath from "../get-path.js";
 
-export default function SearchBar() {
+const SearchBar = () => {
   const [query, setQuery] = useState("");
   const [path, setPath] = useState("");
 
@@ -21,13 +21,13 @@ export default function SearchBar() {
   };
   
   const handleKeyDown = event => {
-    if (event.key === 'Enter') {
-     setPath(getPath(prayers, query)? 
-              getPath(prayers, query).toString().replace(/,/g, '.'): 
-              "Please use one of the suggestions above");
+      if (event.key === 'Enter') {
+        setPath(getPath(prayers, query)? 
+                getPath(prayers, query).toString().replace(/,/g, '.'): 
+                "Please use one of the suggestions above");
+      }
     }
-  };
-  
+
   return (
     <div className="search-bar">
       <span className="sr-only">Search</span>
@@ -46,18 +46,21 @@ export default function SearchBar() {
           />
         </svg>
       </span>
-      <input
-        onKeyDown={handleKeyDown}
-        onChange={(event) => setQuery(event.target.value)}
-        placeholder="Search for paths..."
-        type="text"
-        id="search"
-        required
-      />
     
-      <div style={{ fontSize: "100", color: "yellow", display: "inline-block" }}>
-        {query ? path : ""}
-      </div>
+        <input
+          onKeyDown={handleKeyDown}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder="Search for paths..."
+          type="text"
+          id="search"
+          required
+        />
+      
+        <div className="path">
+          {query.length > 0 ? path : ""}
+        </div>
+
     </div>
   );
 }
+export {SearchBar}

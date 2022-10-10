@@ -15,7 +15,7 @@ h1 {
 
 p {
   font-size: 3rem /* 48px */;
-  font-family: sans-serif;
+  font-family: Helvetica;
   text-align: center;
   --text-opacity: 1;
   color: rgb(229 231 235 / var(--text-opacity));
@@ -27,7 +27,7 @@ p {
 
 .suggested-prayers p {
   font-size: 1rem;
-  font-family: cursive;
+  font-family: Helvetica;
   text-align: center;
 }
 

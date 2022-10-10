@@ -1,5 +1,5 @@
 import "./App.css";
-import SearchBar from "./SearchBar.js";
+import {SearchBar} from "./SearchBar.js";
 
 export default function App() {
   return (
