@@ -1,3 +1,6 @@
+// Returns an array of path
+//@params obj is type object
+//@params query is type string
 const getPath = (obj, query) => {
     let result;
   
@@ -5,7 +8,8 @@ const getPath = (obj, query) => {
       if (value === query) {
         result = [key];
         return result;
-      } else if (value && typeof value === "object") {
+      } 
+      else if (value && typeof value === "object") {
         //Recurse down the tree
         let path = getPath(value, query);
         if (path) {
@@ -15,7 +19,7 @@ const getPath = (obj, query) => {
       }
     }
     return result;
-  };
-  
-  export default getPath;
+};
+
+export default getPath;
   

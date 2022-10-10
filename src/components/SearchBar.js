@@ -19,7 +19,8 @@ const SearchBar = () => {
       }
     }
   };
-  
+
+  {/*Returns the path, type 'string'*/}
   const handleKeyDown = event => {
       if (event.key === 'Enter') {
         setPath(getPath(prayers, query)? 
@@ -59,7 +60,6 @@ const SearchBar = () => {
         <div className="path">
           {query.length > 0 ? path : ""}
         </div>
-
     </div>
   );
 }

@@ -1,9 +1,7 @@
 .search-bar {
+    justify-content: center;
     font-family: sans-serif;
     display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    /* align-items: center; */
     height: 50vh;
     margin: 3.125rem 0rem;
   }

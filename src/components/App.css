@@ -21,6 +21,7 @@ p {
   color: rgb(229 231 235 / var(--text-opacity));
   line-height: 0;
 }
+
 .suggested-prayers {
   margin-top: -30px;
 }
@@ -36,14 +37,16 @@ p {
   .text p {
     font-size: 1.5rem;
   }
+
   h1 {
     font-size: 1.75rem;
   }
+  
   .suggested-prayers p {
     margin-top: 20px;
     line-height: 0.5px;
     font-size: 0.7rem;
-    font-family: cursive;
+    font-family: Helvetica;
     text-align: center;
   }
 }

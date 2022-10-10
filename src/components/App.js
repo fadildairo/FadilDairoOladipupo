@@ -6,6 +6,7 @@ export default function App() {
     <>
       <div className="text">
         <p>For the ❤ of dark mode</p>
+        
         <h1>
           Type a suggested prayer
           <span role="img" aria-label="Prayer hand emoji">
@@ -16,6 +17,7 @@ export default function App() {
             😉
           </span>
         </h1>
+
         <div className="suggested-prayers">
           <p>I do not want to be a mechanic</p>
           <p>God abeg! I want to be a baller</p>
@@ -23,6 +25,7 @@ export default function App() {
           <p>I just want to travel to different countries</p>
         </div>
       </div>
+
       <SearchBar />
     </>
   );
