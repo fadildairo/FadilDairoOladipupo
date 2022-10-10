@@ -56,7 +56,7 @@ export default function SearchBar() {
       />
     
       <div style={{ fontSize: "100", color: "yellow", display: "inline-block" }}>
-        {path}
+        {query ? path : ""}
       </div>
     </div>
   );
